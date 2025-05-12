@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Joydeep Paul - Full Stack Developer | Data Analyst | Cyber Security Enthusiast. Check out my projects, skills, and contact me."
+    />
+    <title>Joydeep Paul | Full Stack Developer & Tech Enthusiast</title>
+    <!-- aos cdn to add animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+
+  <body id="html-body" class="body">
+    <!-- Header  -->
+    <!-- position set to absolute. This will cover the screen if User click on hamburger in mobile  -->
+    <div class="cover-screen"></div>
+    <!-- This is sidebar for menu icons in moble position set to absolute -->
+    <div
+      id="insert-navbar-elements-mobile"
+      class="insert-navbar-elements-mobile adjust-items-flex"
+    >
+      <div id="close-btn-svg" class="close-btn-svg">
+        <img src="./img/close.svg" alt="close" />
+      </div>
+      <ul class="menu-item-mobile">
+        <li class="hide-sidebar-js">
+          <a
+            class="menu-item-link-mobile dis-inline-block"
+            href="#about-section"
+            >About</a
+          >
+        </li>
+        <li class="hide-sidebar-js">
+          <a
+            class="menu-item-link-mobile dis-inline-block"
+            href="#skill-section"
+            >Skills</a
+          >
+        </li>
+        <li class="hide-sidebar-js">
+          <a
+            class="menu-item-link-mobile dis-inline-block"
+            href="#project-section"
+            >Projects</a
+          >
+        </li>
+        <li class="hide-sidebar-js">
+          <a
+            class="menu-item-link-mobile dis-inline-block"
+            href="#eduExperience-section"
+            >Education & Experience</a
+          >
+        </li>
+        <li class="hide-sidebar-js">
+          <a
+            class="menu-item-link-mobile dis-inline-block"
+            href="#contact-section"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- This will provide slideshow for the project -->
+    <div class="slideShowWithProjectImage hideSlide">
+      <div class="close-slide"><img class="close-btn-svg-slide" id="closeSlideShow" src="./img/close-slide.svg" alt="Close"></div>
+      <div class="slidebox-container">
+        <div class="left-arrow">
+          <img class="left-arrow-svg" src="./img/left_svg.svg" alt="left arrow">
+        </div>
+        <div class="slidebox">
+
+        </div>
+        <div class="right-arrow">
+          <img class="right-arrow-svg" src="./img/right_svg.svg" alt="right arrow">
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="inner-navbar">
+        <ul>
+          <li class="logo" data-aos="fade-down">
+            <span>Joy</span><span>Deep</span>
+          </li>
+        </ul>
+
+        <!-- For desktop version -->
+        <div id="insert-navbar-elements" class="insert-navbar-elements">
+          <ul class="menu-item">
+            <li><a class="menu-item-link" href="#about-section">About</a></li>
+            <li><a class="menu-item-link" href="#skill-section">Skills</a></li>
+            <li>
+              <a class="menu-item-link" href="#project-section">Projects</a>
+            </li>
+            <li>
+              <a class="menu-item-link" href="#eduExperience-section"
+                >Education & Experience</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- For mobile version  -->
+
+        <!-- <div class="relative"> -->
+
+        <!-- </div> -->
+        <ul>
+          <!-- For Desktop  -->
+          <li id="hamburger-menu" class="hamburger-menu">
+            <img
+              class="hamburger_svg"
+              src="./img/burger-menu-svgrepo-com.svg"
+              alt="menu"
+              data-aos="fade-down"
+            />
+          </li>
+          <!-- For mobile -->
+          <li id="hamburger-menu-mobile" class="hamburger-menu-mobile">
+            <img
+              class="hamburger_svg"
+              src="./img/burger-menu-svgrepo-com.svg"
+              alt="menu"
+              data-aos="fade-down"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header" id="intro">
+      <!-- middle intro  -->
+      <div class="overlay"></div>
+      <section
+        class="middle-intro"
+        data-aos="fade-right"
+        data-aos-offset="150"
+        data-aos-easing="ease-in-sine"
+      >
+        <div class="middle-intro-box">
+          <div class="intro-main-box">
+            <p class="hi-all">Hi!</p>
+          </div>
+          <div class="intro-main-box">
+            <p class="intro-main-box-name">I am Joydeep Paul</p>
+          </div>
+          <div class="intro-main-box intro-main-box-skills">
+            <p class="intro-main-box-expertise">
+              Having good expertise in <span class="skill-display"></span>
+            </p>
+          </div>
+          <div class="work-btn-box">
+            <a
+              class="work-btn"
+              target="_blank"
+              href="https://github.com/JoydeepPaul399?tab=repositories"
+              >Visit My Works</a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main Content  -->
+    <main>
+      <!-- about me box -->
+      <section id="about-section" class="image-section">
+        <div class="image-box">
+          <div class="image-box-inner">
+            <img
+              class="my-image"
+              data-aos-delay="300"
+              data-aos="flip-left"
+              data-aos-duration="2000"
+              src="./img/myImage.jpg"
+              alt="my Image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-offset="150"
+          data-aos-duration="500"
+          class="about-me-box"
+        >
+          <h4 class="mt-14">About Me</h4>
+          <p class="mt-14 mr-9 about-me-para">
+            Hi there! I'm Joydeep Paul, a passionate full-stack web developer,
+            data enthusiast, and tech lover. I earned my BCA from Amity
+            University Online, where I gained a solid understanding of computer
+            science and tech fundamentals. Outside of coding and diving into
+            data, I love playing cricket, reading, and taking on new programming
+            challenges. Over the years, I've had the opportunity to work with a
+            wide range of technologies, including: Full Stack Web Development
+            (React, Node.js, MongoDB, Express) Data Analysis (Python, SQL, Data
+            Visualization) Cyber Security and Ethical Hacking DevOps tools like
+            Docker, Kubernetes, Jenkins, AWS, and Shell Scripting I've worked on
+            many exciting projects that reflect my skills and passion. I'm
+            always looking to learn more and push my boundaries. Feel free to
+            explore the projects I've worked on below!
+          </p>
+          <a class="cv-download-btn mt-14" download href="/Joydeep.pdf"
+            >Download My CV</a
+          >
+        </div>
+      </section>
+
+      <!-- Divider line  -->
+      <div class="divider"></div>
+
+      <!-- Skill section  -->
+      <section id="skill-section" class="skill-section">
+        <div class="skill-heading" data-aos-offset="180" data-aos="zoom-out">
+          My Skills
+        </div>
+        <div class="my-skills-box">
+          <div
+            class="daily-use-softwares skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3>Essential Software for Daily Use</h3>
+            </div>
+            <ul>
+              <li>Ms Word</li>
+              <li>Excel</li>
+              <li>Power BI</li>
+              <li>PPT</li>
+              <li>MS Teams</li>
+              <li>Outlook</li>
+              <li>OneDrive</li>
+              <li>Adobe Photoshop</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div
+            class="full-stack-web-dev skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3 class="mt-14">Full Stack Web Development</h3>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Figma</li>
+              <li>Tailwind CSS</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>React</li>
+              <li>Intermediate Next.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>PHP</li>
+              <li>MongoDB/Mongoose</li>
+              <li>MySQL</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div
+            class="dev-ops skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3 class="section-title">DevOps</h3>
+            </div>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>Jenkins</li>
+              <li>AWS</li>
+              <li>Shell Scripting</li>
+            </ul>
+          </div>
+
+          <div
+            class="data-analysis skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3 class="section-title">Data Analysis</h3>
+            </div>
+            <ul>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>MySQL</li>
+              <li>Excel</li>
+              <li>Power BI</li>
+            </ul>
+          </div>
+
+          <div
+            class="cyber-security skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3>Cyber Security and Ethical Hacking</h3>
+            </div>
+            <ul>
+              <li>Using Kali Linux</li>
+              <li>SQL Injection</li>
+              <li>Cross-Site Scripting</li>
+              <li>Configuring Fire wall</li>
+            </ul>
+          </div>
+
+          <div
+            class="programming-language skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3>Programming Languages</h3>
+            </div>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+
+          <div
+            class="tech-support skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="skill-head-box">
+              <h3>Tech Support</h3>
+            </div>
+            <ul>
+              <li>
+                <b>Technical Support:</b> Troubleshoot and resolve
+                hardware/software issues.
+              </li>
+              <li>
+                <b>Installation:</b> Set up and configure OS and applications.
+              </li>
+              <li>
+                <b>User Management:</b> Create and manage user accounts and
+                permissions.
+              </li>
+              <li>
+                <b>Software Updates:</b> Apply patches and updates for
+                applications and OS.
+              </li>
+
+              <li>
+                <b>Network Support:</b> Troubleshoot network connectivity
+                issues.
+              </li>
+              <li>
+                <b>Controller Configuration:</b> Configure and manage device
+                controllers.
+              </li>
+              <li>
+                <b>NVR Configuration:</b> Set up and maintain Network Video
+                Recorders.
+              </li>
+              <li>
+                <b>Camera Configuration:</b> Configure and troubleshoot CCTV
+                cameras.
+              </li>
+              <li>
+                <b>Printer Troubleshooting:</b> Diagnose and resolve printer
+                issues.
+              </li>
+              <li>
+                <b>Remote Support:</b> Assist users remotely via tools or phone.
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="operating-systems skill-box"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <div class="skill-head-box">
+              <h3 class="section-title">Operating Systems</h3>
+            </div>
+            <ul>
+              <li>Windows</li>
+              <li>Ubuntu</li>
+              <li>CentOS</li>
+              <li>Kali Linux</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider line  -->
+      <div class="divider"></div>
+      <!-- project container -->
+      <section id="project-section" class="project-section">
+        <h3 class="project-heading" data-aos="fade-right">Projects</h3>
+        <div class="project-container">
+          <!-- project box 1 -->
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">
+              Hotel Booking Cancellations(Using Excel)
+            </h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  class="project-image showProjectDemo"
+                  src="./img/1/1.PNG"
+                  alt="Project Image"
+                  data-folder="1"
+                  data-total="3"
+                  
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project analyzes hotel booking data to understand
+                  cancellation patterns. It explores who is cancelling more
+                  frequently—families, couples, or single travelers.
+                  Additionally, it identifies the locations with the highest
+                  number of hotels and highlights where cancellations are most
+                  common. The project also examines the time periods when
+                  cancellations are most likely to occur.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Hotel-Booking-Cancellations.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="project-box"
+            title="Open project on GitHub"
+            data-aos="fade-right"
+          >
+            <h3 class="project-title">Reliance Sales Report(Using PowerBI)</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/2/1.png"
+                  alt="Project Image"
+                  data-folder="2"
+                  data-total="2"
+                  
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project presents a sales report for Reliance covering the
+                  period from 1997 to 1998. It includes a breakdown of
+                  transactions by state and provides insights into revenue
+                  distribution across different regions.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Reliance-Sales-Report.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">Full Stack E-Commerce Web App(MERN)</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/3/1.png"
+                  alt="project image"
+                  data-folder="3"
+                  data-total="5"
+                  
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project is a full-stack e-commerce web application
+                  similar to Blinkit. Users can browse products, place orders,
+                  and use standard login functionality for secure access. The
+                  admin panel allows administrators to manage the platform by
+                  adding or deleting products, categories, and subcategories.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Full-Stack-E-Commerce-web-app.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">Full Stack Chatting Web App (MERN)</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/4/1.png"
+                  alt="Project Image"
+                  data-folder="4"
+                  data-total="3"
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project features user registration and login
+                  functionality, enabling secure access. It also includes
+                  real-time messaging between users using the Socket.io library,
+                  allowing for instant communication. Users can update their
+                  details, enhancing personalization and interaction within the
+                  app.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Chatting-Web-App.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">Coding Forum for Programmers</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/5/1.PNG"
+                  alt="Project Image"
+                  data-folder="5"
+                  data-total="1"
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project allows developers to post their errors, and other
+                  developers can provide solutions to those errors. It is built
+                  using HTML, Bootstrap, PHP, and SQL.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Coding_Forum_for_Programmers.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">Spotify Clone (Front-End)</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/6/1.png"
+                  alt="Project Image"
+                  data-folder="6"
+                  data-total="2"
+
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project is a Spotify clone that allows users to scan a
+                  provided folder for songs. Users can play and pause music
+                  directly from the interface. The application is fully
+                  responsive, ensuring a seamless experience across devices.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Music_Player.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right" >
+            <h3 class="project-title">Netflix Clone (Front-End)</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box cover-box">
+                <div class="coverImage showProjectDemo">
+                  <p  class="image-view style-p">Click to see images</p>
+                </div>
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image showProjectDemo"
+                  src="./img/7/1.png"
+                  alt="Project Image"
+                  data-folder="7"
+                  data-total="2"
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  This project is a clone of the Netflix homepage, designed to
+                  mimic its layout and functionality. The page is fully
+                  responsive, ensuring an optimal viewing experience across all
+                  devices.
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399/Netflix_Clone.git"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box" data-aos="fade-right">
+            <h3 class="project-title">More Projects</h3>
+            <div class="project-box-inner">
+              <div class="project-image-box">
+                <img
+                  loading="lazy"
+                  width="200px"
+                  class="project-image"
+                  src="./img/more.jpeg"
+                  alt="Project Image"
+                />
+              </div>
+              <div class="project-description-box">
+                <p class="project-description">
+                  Visit GitHub to check out other projects
+                </p>
+                <a
+                  class="project-link"
+                  href="https://github.com/JoydeepPaul399"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Divider line  -->
+      <div class="divider"></div>
+      <section class="eduExperience-section">
+        <!-- Academic Background -->
+        <section class="academic-background">
+          <h3 class="academic-heading" data-aos="zoom-out">
+            Academic Background
+          </h3>
+          <div class="certification-container">
+            <div
+              class="education education-box"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-sine"
+            >
+              <h3 class="education-list-heading">Formal Education</h3>
+              <ol class="education-list">
+                <li>
+                  Bachelor of Computer Applications from Amity University Online
+                </li>
+                <li>
+                  Higher Secondary (Science Stream) from Fatikroy Higher Secondary School.
+                </li>
+                <li>
+                  Secondary Education (10th Class) from Krishnanagar Bani Mandir High School.
+                </li>
+              </ol>
+            </div>
+            <div
+              class="certification education-box"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <h3 class="education-list-heading">External Certifications</h3>
+              <ol class="education-list">
+                <li>
+                  Full Stack Web Development from 30 days coding challenge
+                </li>
+                <li>Excel for Data analysis from Amity Online</li>
+                <li>DCA</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- Divider line  -->
+        <div class="divider"></div>
+        <!-- Experience section -->
+        <section class="experience-section">
+          <div class="experience-box" data-aos="zoom-out" data-aos-offset="0">
+            <h3>Professional Experience</h3>
+            <ul>
+              <li class="experience-list">
+                BMS Operator at Exora Business Park
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- Divider line  -->
+      <div class="divider"></div>
+      <!-- Contact me section -->
+
+      <section id="contact-section" class="contact-section">
+        <div class="contact-heading" data-aos="fade-down" data-aos-offset="0">
+          <p class="communicate-heading-p">How can you communicate?</p>
+          <h3>Contact Me</h3>
+        </div>
+        <div class="contact-container">
+          <!-- email box -->
+          <div class="contact-box" data-aos="fade-down" data-aos-offset="0">
+            <div class="email-address">
+              <span>REACH ME AT :</span>
+              <a class="email-me-here" href="mailto:joydeeppal399@gmail.com"
+                >joydeeppal399@gmail.com</a
+              >
+            </div>
+            <div class="common-btn-container">
+              <a
+                class="common-btn"
+                target="_blank"
+                href="mailto:joydeeppal399@gmail.com"
+                >Click Here</a
+              >
+            </div>
+          </div>
+          <!-- social handles -->
+          <div class="contact-box" data-aos="fade-down" data-aos-offset="0">
+            <h3 class="social-box-heading">Other Social Handles</h3>
+            <div class="site-url">
+              <!-- facebook svg  -->
+              <a
+                href="https://www.facebook.com/profile.php?id=100039995406429"
+                target="_blank"
+              >
+                <img class="contact-img" loading="lazy" src="./img/facebook.svg" alt="facebook" />
+              </a>
+              <!-- Insatagram svg  -->
+              <a
+                href="https://www.instagram.com/joydeep_paul?igsh=YzdhNG45OXllZTBz"
+                target="_blank"
+              >
+                <img class="contact-img" loading="lazy" src="./img/insta.svg" alt="Instagram" />
+              </a>
+
+              <!-- GitHub Svg  -->
+              <a href="https://github.com/JoydeepPaul399" target="_blank">
+                <img class="contact-img" loading="lazy" src="./img/github.svg" alt="" />
+              </a>
+
+              <!-- LinkedIn Svg  -->
+              <a
+                href="https://www.linkedin.com/in/joydeep-paul-172619331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                target="_blank"
+              >
+                <img class="contact-img" loading="lazy" src="./img/linkedIn.svg" alt="LinkedIn" />
+              </a>
+            </div>
+          </div>
+          <!-- Download Cv box -->
+          <div class="contact-box" data-aos="fade-down" data-aos-offset="0">
+            <a class="common-btn" download href="/Joydeep.pdf"
+              >Download My CV</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="footer-box">
+        <div class="footer-content-left">
+          <div class="footer-logo-left">
+            <span class="footer-logo-joy">Joy</span
+            ><span class="footer-logo-deep">Deep</span>
+          </div>
+          <p>&copy; 2025 JoyDeep. All rights reserved.</p>
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com/profile.php?id=100039995406429"
+            target="_blank"
+            ><img class="footer-logo" loading="lazy" src="./img/facebook.svg" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/joydeep_paul?igsh=YzdhNG45OXllZTBz"
+            target="_blank"
+            ><img class="footer-logo" loading="lazy" src="./img/insta.svg" alt="Instagram"
+          /></a>
+          <a href="https://github.com/JoydeepPaul399" target="_blank"
+            ><img class="footer-logo" loading="lazy" src="./img/github.svg" alt="GitHub"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/joydeep-paul-172619331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+            target="_blank"
+            ><img class="footer-logo" loading="lazy" src="./img/linkedIn.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script files -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: window.innerWidth < 768 ? 100 : 300,
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
