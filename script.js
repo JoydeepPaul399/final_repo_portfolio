@@ -6,12 +6,26 @@ const coverScreen= document.getElementsByClassName("cover-screen")[0]
 const closeBtnSvg= document.getElementById("close-btn-svg")
 const htmlBody= document.getElementById("html-body")
 const hideSidebarClickMenu= document.getElementsByClassName("hide-sidebar-js")
+const showProjectDemo= document.getElementsByClassName("showProjectDemo")
+const slideBox= document.getElementsByClassName("slidebox")[0]
+const hideSlide= document.getElementsByClassName("hideSlide")[0]
+const closeSlideShow= document.getElementById("closeSlideShow")
+
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+const coverImage= document.getElementsByClassName("coverImage")
+const imageView= document.getElementsByClassName("image-view")
+const imageViewArray= Array.from(imageView)
+
+let currentIndex = 1;
+let currentFolder = "";
+let totalImages = 1;
 
 
 // To display white color in navbar when scrolled 
 function handleScroll() {
     const navbar = document.getElementById("navbar");
-    // console.log("scrollY", scrollY)
     if (window.scrollY > 0) {
     navbar.classList.add("scrolled");
     } else {
@@ -51,10 +65,6 @@ if(hamburgerMenuForMobile){
     })
 }
 
-
-
-
-
 // close button to close the sidebar if user clicks
 if(closeBtnSvg){
     closeBtnSvg.addEventListener("click", ()=>{
@@ -76,27 +86,6 @@ if(hideSidebarClickMenu){
 }
 
 
-// const showProjectDemo= document.getElementsByClassName("showProjectDemo")[0]
-const showProjectDemo= document.getElementsByClassName("showProjectDemo")
-const slideBox= document.getElementsByClassName("slidebox")[0]
-const hideSlide= document.getElementsByClassName("hideSlide")[0]
-const closeSlideShow= document.getElementById("closeSlideShow")
-
-// let showSlide= fal
-
-// showProjectDemo.addEventListener("click", ()=>{
-//     HideSlide.style.display="block"
-//     htmlBody.classList.add("no-scroll")
-//     slideBox.insertAdjacentHTML("afterbegin", `
-//         <img src='./img/1/1.png' class='img img-slide' alt="slide">
-//         `)
-
-// })
-const leftArrow = document.querySelector(".left-arrow");
-const rightArrow = document.querySelector(".right-arrow");
-let currentIndex = 1;
-let currentFolder = "";
-let totalImages = 1;
 
 function updateSlideImage() {
   const newImgSrc = `./img/${currentFolder}/${currentIndex}.png`;
@@ -126,31 +115,28 @@ if (closeSlideShow) {
 
 // Next image
 rightArrow.addEventListener("click", () => {
-  if (currentIndex < totalImages) {
+  if(currentIndex<totalImages){
     currentIndex++;
-    updateSlideImage();
   }
+  else{
+    currentIndex= 1
+  }
+    updateSlideImage();
+  
 });
 
-// Previous image
-leftArrow.addEventListener("click", () => {
-  if (currentIndex > 1) {
-    currentIndex--;
+if (leftArrow) {
+  leftArrow.addEventListener("click", () => {
+    if (currentIndex > 1) {
+      currentIndex--;
+    } else {
+      currentIndex = totalImages;
+    }
     updateSlideImage();
-  }
-});
+  });
+}
 
-// if(closeSlideShow){
-//     closeSlideShow.addEventListener("click", ()=>{
-//         HideSlide.style.display="none"
-//         htmlBody.classList.remove("no-scroll")
-//         slideBox.innerHTML = "";
-//     })
-// }
 
-const coverImage= document.getElementsByClassName("coverImage")
-const imageView= document.getElementsByClassName("image-view")
-const imageViewArray= Array.from(imageView)
 
 if(coverImage){
   Array.from(coverImage).forEach((el, index)=>{

@@ -1,30 +1,17 @@
-/* Header design  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Cal+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins", sans-serif; */
     font-family: "Open Sans", sans-serif;
     background-color: transparent;
     scroll-behavior: smooth;
     overflow-x: hidden;
     height: auto;
 }
-
-
-
-/* body{
-    
-} */
-
-/* html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-} */
 
 body::selection{
     background-color: aqua;
@@ -37,7 +24,6 @@ body::selection{
     margin: 9px auto;
 }
 
-
 .navbar{
     width: 100%;
     position: fixed;
@@ -46,8 +32,6 @@ body::selection{
     z-index: 10000;
     opacity: 1;
 }
-
-
 
 .navbar {
     transition: background-color 0.3s ease;
@@ -85,17 +69,13 @@ body::selection{
     opacity: 0.8;
 }
 
-
-
 .middle-intro{
     width: 100%;
-    /* height: 600px; */
     display: flex;
     align-items: center;
     position: relative;
     left: 0;
     height: 100vh;
-    /* border: 1px solid yellow; */
     overflow-y: hidden;
 }
 
@@ -105,7 +85,6 @@ body::selection{
     left: 25%;
     top: 160px;
     height: 70%;
-    /* border: 1px solid red; */
     
 }
 
@@ -132,24 +111,12 @@ body::selection{
 
 .logo{
     font-size: 44px;
-    /* animation: animateFromTop 0.9s ease-out 0.2s forwards ; */
 }
 
 .hamburger_svg{
     width: 30px;
     cursor: pointer;
 }
-
-/* @keyframes animateFromTop{
-    0%{
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-} */
 
 .logo span:first-child{
     color: #333333;
@@ -193,7 +160,7 @@ body::selection{
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    height: fit-content;
+    height: 30px;
 }
 
 .intro-main-box-skills{
@@ -217,8 +184,7 @@ body::selection{
 
 .typed-cursor {
     color: yellow; 
-  }
-
+}
 
 .work-btn{
     background-color: #695aa6;
@@ -228,7 +194,6 @@ body::selection{
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-top: 24px;
     display: inline-block;
     transition: background-color 0.2s ease-in-out 0.1s;
 }
@@ -241,8 +206,6 @@ body::selection{
     margin-top: 19px;
 }
 
-/* main box css  */
-
 .image-section{
     width: 100%;
     min-height: 200px;
@@ -250,7 +213,6 @@ body::selection{
     display: grid;
     grid-template-columns: 30% 1fr;
     justify-content: center;
-    /* background-image: linear-gradient(#8cbfe1, #5994cf); */
     overflow-x: hidden;
     padding: 8px 0px;
     height: fit-content;
@@ -265,7 +227,6 @@ body::selection{
 }
 .image-box{
     margin:  auto;
-    /* margin-top: 150px; */
 }
 
 .image-box-inner{
@@ -276,7 +237,6 @@ body::selection{
     height: 100%;
     overflow: hidden;
 }
-
 
 .my-image{
     border-radius: 50%;
@@ -296,7 +256,7 @@ body::selection{
     font-size: 18px;
     padding: 5px 10px;
     border-radius: 15px;
-    background-color: #3498db; /* Blue */
+    background-color: #3498db; 
     color: white; 
     border: 1px solid #ccc;
     text-decoration: none;
@@ -304,16 +264,14 @@ body::selection{
     outline: none;
     transition: background-color 0.3s ease-in-out ;
 }
+
 .cv-download-btn:hover{
     background-color: #070707;
     color: white;
     
 }
 
-/* https://themewagon.github.io/meyawo/ */
-
 /* skill section */
-
 .skill-section{
     overflow-x: hidden;
 }
@@ -322,6 +280,7 @@ body::selection{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 20px 0;
     gap: 4px;
     width: 95%;
     margin: auto;
@@ -334,7 +293,6 @@ body::selection{
     color: rgb(31, 121, 199);
     font-family: "Roboto", sans-serif;
     margin: 10px 0;
-  
 }
 
 .skill-box{
@@ -346,6 +304,7 @@ body::selection{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .skill-box ul li{
@@ -389,7 +348,7 @@ body::selection{
     flex-wrap: wrap; 
     justify-content: center; 
     
-  }
+}
 
 .project-box{
     width: 300px;
@@ -424,17 +383,14 @@ body::selection{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    min-height: 348px; /*recently added */
+    min-height: 348px; 
 }
 
 .project-description{
     font-size: 15px;
-    /* margin: 10px; */
     font-weight: bold;
     color: cadetblue;
 }
-
-
 
 .project-link{
     text-decoration: none;
@@ -506,7 +462,7 @@ body::selection{
     padding: 5px;
 }
 
-/* Experience  */
+Experience 
 
 .experience-section{
     margin: 10px 67px;
@@ -599,7 +555,6 @@ body::selection{
 }
 
 /* footer  */
-
 .footer{
     background-color: #e9ecef;
     height: 90px;
@@ -616,7 +571,6 @@ body::selection{
 
 .footer-logo-left{
     width: 100px;
-    /* height: 20px; */
     height: 28px;
     font-size: 20px;
 }
@@ -648,7 +602,6 @@ body::selection{
     background-color: rgba(0, 0, 0, 0.8);
     width: 30%;
     animation: sidebarAnimate 0.9s ease 0.3 ;
-
 }
 
 @keyframes sidebarAnimate {
@@ -668,8 +621,7 @@ body::selection{
 
 .insert-navbar-elements-mobile.show-menuItemInMobile .menu-item-mobile li a{
     text-decoration: none;
-    margin: 5px 4px;
-    
+    margin: 5px 4px; 
 }
 
 .close-btn-svg{
@@ -697,7 +649,6 @@ body::selection{
     background-color: rgb(0, 251, 255);
     width: 100%;
     border-radius: 2px;
-    
     color: black;
 }
 
@@ -716,10 +667,7 @@ body::selection{
     height: 100%;
     z-index: 100000;
     animation: coverScreenAnimate 0.9s ease 0.3;
-    
 }
-
-
 
 @keyframes coverScreenAnimate {
     0%{
@@ -735,8 +683,6 @@ body::selection{
 .no-scroll{
     overflow: hidden;
 }
-
-
 
 @media (max-width: 948px) {
 
@@ -819,7 +765,6 @@ body::selection{
     .contact-img{
         width: 25px;
         height: 25px;
-
     }
     .site-url a{
         display: inline-block;
@@ -860,8 +805,6 @@ body::selection{
         left: 20px;
         width: 90%;
     }
-
-    
     .project-box{
         width: 80%;
     }
@@ -923,7 +866,6 @@ body::selection{
     }
     .footer-content-left p{
         font-size: 12px;
-        
     }
 }
 
@@ -935,7 +877,7 @@ body::selection{
         font-size: 20px;
     }
 }
-@media (max-width:870px){
+@media (max-width:547px){
     .insert-navbar-elements-mobile.show-menuItemInMobile{
         width: 80%;
     }
@@ -985,11 +927,7 @@ body::selection{
     opacity: 1;  
 }
 
-
-
 /* slide show  */
-
-/* .slideShowWithProjectImage.showslidecontainer{ */
 .slideShowWithProjectImage{
     position: fixed;
     top: 0;
@@ -1008,7 +946,6 @@ body::selection{
     right: 50%;
     left: 50%;
     bottom: 50%;
-    /* background-color: white; */
     transform: translate(-50%, -50%);
     height: fit-content;
     width:  70%;
@@ -1019,9 +956,7 @@ body::selection{
 
 .close-btn-svg-slide{
     height: 30px;
-    width: 30px;
-
-    
+    width: 30px;    
 }
 
 .close-btn-svg-slide:hover{
@@ -1074,7 +1009,6 @@ body::selection{
 }
 
 .coverImage{
-    
     width: 100%;
     height: 100%;
     position: absolute;
