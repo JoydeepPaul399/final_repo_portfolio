@@ -149,3 +149,30 @@ if(coverImage){
     })
   })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Select all experience boxes
+  const boxes = document.querySelectorAll('.experience-box');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show'); // add class to trigger animation
+      }
+    });
+  }, { threshold: 0.2 }); // trigger when 20% of box is visible
+
+  boxes.forEach(box => {
+    observer.observe(box); // observe each experience box
+  });

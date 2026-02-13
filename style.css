@@ -1035,3 +1035,121 @@ Experience
         height: 30px;
     }
 }
+
+
+
+
+/* Initial state: hidden and shifted to left */
+.experience-box {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;                  /* hidden initially */
+    transform: translateX(-100px); /* shifted to left */
+    transition: all 0.8s ease-out;
+}
+
+/* When scrolled into view: visible and in place */
+.experience-box.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Experience Section */
+.experience-section {
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    overflow-x: hidden;
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.experience-heading {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #382a6d;
+    margin-bottom: 40px;
+}
+
+.experience-box {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e4747;
+    margin-bottom: 5px;
+}
+
+.job-duration {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.experience-list li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-box {
+        padding: 15px 20px;
+    }
+    .job-title {
+        font-size: 18px;
+    }
+    .experience-list {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-heading {
+        font-size: 24px;
+    }
+    .job-title {
+        font-size: 16px;
+    }
+    .experience-list {
+        font-size: 13px;
+        padding-left: 15px;
+    }
+}
